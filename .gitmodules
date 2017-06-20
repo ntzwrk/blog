@@ -1,0 +1,3 @@
+[submodule "themes/cocoa-eh"]
+	path = themes/cocoa-eh
+	url = gh:ntzwrk/cocoa-eh-hugo-theme

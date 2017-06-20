@@ -1,0 +1,53 @@
+baseUrl = "https://blog.ntzwrk.org/"
+title = "ntzwrk blog"
+
+theme = "cocoa-eh"
+languageCode = "en-US"
+
+buildDrafts = false
+canonifyUrls = true
+pluralizeListTitles = false
+contentDir = "content"
+layoutDir = "layouts"
+publishDir = "public"
+
+
+[permalinks]
+blog = "posts/:slug/"
+
+
+[params]
+description = "Some people blogging about random things."
+copyright = "Licensed under Creative Commons BY-SA 4.0"
+copyrightUrl = "https://creativecommons.org/licenses/by-sa/4.0/"
+issoHost = "comments.blog.ntzwrk.org"
+logoFile = "static/img/logo.svg"
+faviconFile = "static/img/logo.svg"
+githubRepo = "ntzwrk/blog"
+
+dateForm = "Jan 2, 2006"
+dateFormFull = "Mon Jan 2 2006 15:04:05 MST"
+
+email = "%62&#x6C;o&#103&#64nt&#x7A;%77%72%6B&#x2E;&#x6F;r&#103"
+github = "ntzwrk"
+twitter = "ntzwrk"
+social_banner = "static/img/logo-alt.png"
+
+highlightjs = true
+progressively = true
+latestPostCount = 5
+posts_navigation = true
+
+
+[params.colors]
+identifier = "#527fc1f"
+identifier_dark = "#1a3152"
+trivial = "#6a7a8b"
+foreground = "#181d2a"
+background = "#f9f9f9"
+background_dark = "#282a36"
+code = "#87a5d2"
+type = "#97d28b"
+special = "#ffcb8d"
+value = "#96c2d7"
+statement = "#ff8e91"
