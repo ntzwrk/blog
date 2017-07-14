@@ -34,7 +34,7 @@ Beacon is a transparent **voting app** powered by Blockstack's software stack. I
 _There's no way an attacker could manipulate results without attacking the underlying blockchain, which is -- of course -- not easily possible, whilst detecting it is._
 
 ## How
-I'll split the app in **two parts**: A [library](https://github.com/ntzwrk/beacon.js) and a [user interface](https://github.com/ntzwrk/beacon) that uses it. Polls are (optionally) linked to a name out of the `.id` namespace and have attributes like title, description, start and expiry date, a set of permissions that defines who qualifies to vote.
+You can view the current progress at [this github repository](https://github.com/ntzwrk/beacon). Polls are (for now) linked to a name out of the `.id` namespace and have attributes like title, description, start and expiry date, a set of permissions that defines who qualifies to vote.
 
 I effectively started working yesterday, June 19th, and began working on organizational tasks and data specifications for polls and votes. After finishing this I'll work on the library and wiring an user interface to it. I'll keep you up to date while I'm working.
 
