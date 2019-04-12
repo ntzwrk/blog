@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  website:
+    build: ./
+    restart: always
+    networks:
+      - web
+    labels:
+      - 'traefik.enable=true'
+      - 'traefik.backend=website-ntzwrk-blog'
+      - 'traefik.docker.network=web'
+      - 'traefik.frontend.rule=Host:blog.ntzwrk.org'
+      - 'traefik.port=80'
+
+networks:
+  web:
+    external: true
