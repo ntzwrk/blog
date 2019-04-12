@@ -3,7 +3,7 @@
 FROM plugins/hugo as build
 WORKDIR /usr/src/build
 COPY ./src ./
-RUN git clone https://github.com/fuegowolf/cocoa-eh-hugo-theme.git themes/cocoa-eh && \
+RUN git clone https://github.com/ntzwrk/cocoa-eh-hugo-theme.git themes/cocoa-eh && \
   /bin/drone-hugo && \
   find ./ -type f \( \
     -name "*.html" \
