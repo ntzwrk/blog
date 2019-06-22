@@ -12,6 +12,16 @@ services:
       - 'traefik.docker.network=web'
       - 'traefik.frontend.rule=Host:blog.ntzwrk.org'
       - 'traefik.port=80'
+      - 'traefik.frontend.headers.customResponseHeaders=server: '
+      - 'traefik.frontend.headers.isDevelopment=false'
+      - 'traefik.frontend.headers.referrerPolicy=same-origin'
+      - 'traefik.frontend.headers.browserXSSFilter=true'
+      - 'traefik.frontend.headers.contentTypeNosniff=true'
+      - 'traefik.frontend.headers.frameDeny=true'
+      - 'traefik.frontend.headers.STSSeconds=94608000'
+      - 'traefik.frontend.headers.STSIncludeSubdomains=true'
+      - 'traefik.frontend.headers.STSPreload=true'
+      - 'traefik.frontend.headers.contentSecurityPolicy=upgrade-insecure-requests; block-all-mixed-content;'
 
 networks:
   web:
